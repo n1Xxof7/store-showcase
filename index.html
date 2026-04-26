@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Showcase DZ</title>
+
+<style>
+
+/* ===== BASE ===== */
+body{
+  margin:0;
+  font-family:Arial;
+  background:#f8f9fb;
+  color:#111;
+}
+
+/* ===== HERO ===== */
+.hero{
+  height:80vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background:linear-gradient(135deg,#000,#333);
+  color:white;
+}
+
+.hero h1{
+  font-size:40px;
+  animation:fadeUp 1s;
+}
+
+.hero p{
+  opacity:0.8;
+}
+
+.btn{
+  margin-top:15px;
+  padding:12px 25px;
+  background:#25D366;
+  color:white;
+  text-decoration:none;
+  border-radius:5px;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:scale(1.05);
+}
+
+/* ===== GRID ===== */
+.section{
+  padding:60px 20px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:white;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+  transition:0.4s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+.card-content{
+  padding:15px;
+}
+
+.badge{
+  display:inline-block;
+  background:#000;
+  color:#fff;
+  padding:5px 10px;
+  font-size:12px;
+  margin-bottom:10px;
+}
+
+.card h3{
+  margin:10px 0;
+}
+
+/* ===== FEATURES ===== */
+.features{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+  text-align:center;
+}
+
+.feature{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(40px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Choisissez Votre Boutique Professionnelle</h1>
+  <p>Nous transformons votre page Instagram en un vrai site de vente</p>
+  <a class="btn" href="#stores">Voir les modèles</a>
+</section>
+
+<!-- STORES -->
+<section class="section" id="stores">
+  <h2 style="text-align:center;">Nos Designs</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38">
+      <div class="card-content">
+        <span class="badge">🔥 Populaire</span>
+        <h3>Streetwear Store</h3>
+        <p>Parfait pour les pages Instagram modernes</p>
+        <a class="btn" href="store1/index.html">Voir Demo</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1516826957135-700dedea698c">
+      <div class="card-content">
+        <span class="badge">💎 Premium</span>
+        <h3>Luxury Store</h3>
+        <p>Idéal pour les marques élégantes</p>
+        <a class="btn" href="store2/index.html">Voir Demo</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab">
+      <div class="card-content">
+        <span class="badge">⚡ Simple</span>
+        <h3>Minimal Store</h3>
+        <p>Rapide et efficace pour vendre</p>
+        <a class="btn" href="store3/index.html">Voir Demo</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section">
+  <h2 style="text-align:center;">Pourquoi choisir notre service ?</h2>
+
+  <div class="features">
+    <div class="feature">✔ Paiement à la livraison</div>
+    <div class="feature">✔ Livraison dans toute l’Algérie</div>
+    <div class="feature">✔ Commande via WhatsApp</div>
+    <div class="feature">✔ Design professionnel</div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="hero" style="height:40vh;">
+  <h2>Prêt à lancer votre boutique ?</h2>
+  <a class="btn" href="https://wa.me/213XXXXXXXXX">Contactez-nous</a>
+</section>
+
+</body>
+</html>
